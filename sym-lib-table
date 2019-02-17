@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name relayCard-rescue)(type Legacy)(uri ${KIPRJMOD}/relayCard-rescue.lib)(options "")(descr ""))
+)

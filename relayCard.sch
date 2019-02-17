@@ -1,0 +1,2502 @@
+EESchema Schematic File Version 4
+LIBS:relayCard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L relayCard-rescue:STM32F042C4Tx-relayCard-rescue U2
+U 1 1 5B2F3F2B
+P 5100 3500
+F 0 "U2" H 2100 5225 50  0000 L BNN
+F 1 "STM32F072C8T6" H 8100 5225 50  0000 R BNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 8100 5175 50  0001 R TNN
+F 3 "" H 5100 3500 50  0001 C CNN
+F 4 "https://cz.farnell.com/stmicroelectronics/stm32f072c8t6/mcu-arm-cortex-m0-48mhz-lqfp-48/dp/2750643?st=STM32F072" H 5100 3500 50  0001 C CNN "web"
+F 5 "2750643" H 5100 3500 50  0001 C CNN "Objednaci kod"
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:USBLC6-2SC6-relayCard-rescue U1
+U 1 1 5B2FEB86
+P 3500 7250
+F 0 "U1" H 3250 7600 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 3500 6900 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 4150 7600 50  0001 C CNN
+F 3 "" H 3250 7600 50  0001 C CNN
+F 4 "https://cz.farnell.com/stmicroelectronics/usblc6-2sc6/esd-protection-3-5pf-17v-sot23/dp/1269406?st=USBLC6" H 3500 7250 50  0001 C CNN "web"
+F 5 "1269406" H 3500 7250 50  0001 C CNN "Objednaci kod"
+	1    3500 7250
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5B2FEF8B
+P 2950 7250
+F 0 "#PWR012" H 2950 7000 50  0001 C CNN
+F 1 "GND" H 2950 7100 50  0000 C CNN
+F 2 "" H 2950 7250 50  0001 C CNN
+F 3 "" H 2950 7250 50  0001 C CNN
+	1    2950 7250
+	0    1    -1   0   
+$EndComp
+Text Label 4300 7450 0    60   ~ 0
+USB_D-
+Text Label 4300 7050 0    60   ~ 0
+USB_D+
+$Comp
+L power:GND #PWR08
+U 1 1 5B2FF1B6
+P 1850 7700
+F 0 "#PWR08" H 1850 7450 50  0001 C CNN
+F 1 "GND" H 1850 7550 50  0000 C CNN
+F 2 "" H 1850 7700 50  0001 C CNN
+F 3 "" H 1850 7700 50  0001 C CNN
+	1    1850 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5B2FF696
+P 2300 10700
+F 0 "#PWR09" H 2300 10450 50  0001 C CNN
+F 1 "GND" H 2300 10550 50  0000 C CNN
+F 2 "" H 2300 10700 50  0001 C CNN
+F 3 "" H 2300 10700 50  0001 C CNN
+	1    2300 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:Polyfuse-relayCard-rescue F1
+U 1 1 5B300255
+P 2650 10500
+F 0 "F1" V 2550 10500 50  0000 C CNN
+F 1 "SD110-16" V 2750 10500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" H 2700 10300 50  0001 L CNN
+F 3 "" H 2650 10500 50  0001 C CNN
+	1    2650 10500
+	0    1    1    0   
+$EndComp
+$Comp
+L relayCard-rescue:Q_PMOS_DGS-relayCard-rescue Q1
+U 1 1 5B354838
+P 3450 10600
+F 0 "Q1" V 3450 10800 50  0000 L CNN
+F 1 "IRLML6402TRPBF" V 3700 10250 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3650 10700 50  0001 C CNN
+F 3 "" H 3450 10600 50  0001 C CNN
+	1    3450 10600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R3
+U 1 1 5B3557B8
+P 4200 11000
+F 0 "R3" V 4280 11000 50  0000 C CNN
+F 1 "33k" V 4200 11000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4130 11000 50  0001 C CNN
+F 3 "" H 4200 11000 50  0001 C CNN
+	1    4200 11000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5B355862
+P 4500 11000
+F 0 "#PWR017" H 4500 10750 50  0001 C CNN
+F 1 "GND" H 4500 10850 50  0000 C CNN
+F 2 "" H 4500 11000 50  0001 C CNN
+F 3 "" H 4500 11000 50  0001 C CNN
+	1    4500 11000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:D_Zener_Small_ALT-relayCard-rescue D2
+U 1 1 5B355A62
+P 3900 10750
+F 0 "D2" H 3900 10840 50  0000 C CNN
+F 1 "5v1" H 3900 10660 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323" V 3900 10750 50  0001 C CNN
+F 3 "" V 3900 10750 50  0001 C CNN
+	1    3900 10750
+	0    1    1    0   
+$EndComp
+$Comp
+L relayCard-rescue:MCP2551-I_P-relayCard-rescue U4
+U 1 1 5B39260D
+P 7700 7600
+F 0 "U4" H 7300 7950 50  0000 L CNN
+F 1 "sn65hvd233" H 7800 7950 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7700 7100 50  0001 C CIN
+F 3 "" H 7700 7600 50  0001 C CNN
+	1    7700 7600
+	1    0    0    -1  
+$EndComp
+Text Label 1500 4200 0    60   ~ 0
+CAN_RX
+Text Label 1500 4300 0    60   ~ 0
+CAN_TX
+Text Label 6800 7500 0    60   ~ 0
+CAN_RX
+Text Label 6800 7400 0    60   ~ 0
+CAN_TX
+$Comp
+L power:+3V3 #PWR029
+U 1 1 5B392D47
+P 7700 7100
+F 0 "#PWR029" H 7700 6950 50  0001 C CNN
+F 1 "+3V3" H 7700 7240 50  0000 C CNN
+F 2 "" H 7700 7100 50  0001 C CNN
+F 3 "" H 7700 7100 50  0001 C CNN
+	1    7700 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5B392EBB
+P 7700 8150
+F 0 "#PWR030" H 7700 7900 50  0001 C CNN
+F 1 "GND" H 7700 8000 50  0000 C CNN
+F 2 "" H 7700 8150 50  0001 C CNN
+F 3 "" H 7700 8150 50  0001 C CNN
+	1    7700 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5B39304B
+P 7150 8300
+F 0 "#PWR028" H 7150 8050 50  0001 C CNN
+F 1 "GND" H 7150 8150 50  0000 C CNN
+F 2 "" H 7150 8300 50  0001 C CNN
+F 3 "" H 7150 8300 50  0001 C CNN
+	1    7150 8300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7200 7700
+$Comp
+L power:+3V3 #PWR019
+U 1 1 5B39347F
+P 4900 1500
+F 0 "#PWR019" H 4900 1350 50  0001 C CNN
+F 1 "+3V3" H 4900 1640 50  0000 C CNN
+F 2 "" H 4900 1500 50  0001 C CNN
+F 3 "" H 4900 1500 50  0001 C CNN
+	1    4900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5B3937A1
+P 4900 5450
+F 0 "#PWR020" H 4900 5200 50  0001 C CNN
+F 1 "GND" H 4900 5300 50  0000 C CNN
+F 2 "" H 4900 5450 50  0001 C CNN
+F 3 "" H 4900 5450 50  0001 C CNN
+	1    4900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C4
+U 1 1 5B393B81
+P 5750 1150
+F 0 "C4" H 5650 1250 50  0000 L CNN
+F 1 " 100n" V 5800 950 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5750 1150 50  0001 C CNN
+F 3 "" H 5750 1150 50  0001 C CNN
+	1    5750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C5
+U 1 1 5B393E76
+P 5950 1150
+F 0 "C5" H 5850 1250 50  0000 L CNN
+F 1 " 100n" V 6000 950 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5950 1150 50  0001 C CNN
+F 3 "" H 5950 1150 50  0001 C CNN
+	1    5950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C7
+U 1 1 5B393EBC
+P 6150 1150
+F 0 "C7" H 6050 1250 50  0000 L CNN
+F 1 "100n" V 6200 1000 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6150 1150 50  0001 C CNN
+F 3 "" H 6150 1150 50  0001 C CNN
+	1    6150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C9
+U 1 1 5B393F05
+P 6350 1150
+F 0 "C9" H 6250 1250 50  0000 L CNN
+F 1 "100n" V 6400 1000 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6350 1150 50  0001 C CNN
+F 3 "" H 6350 1150 50  0001 C CNN
+	1    6350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR023
+U 1 1 5B393F4D
+P 5750 950
+F 0 "#PWR023" H 5750 800 50  0001 C CNN
+F 1 "+3V3" H 5750 1090 50  0000 C CNN
+F 2 "" H 5750 950 50  0001 C CNN
+F 3 "" H 5750 950 50  0001 C CNN
+	1    5750 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5B39438A
+P 5750 1350
+F 0 "#PWR024" H 5750 1100 50  0001 C CNN
+F 1 "GND" H 5750 1200 50  0000 C CNN
+F 2 "" H 5750 1350 50  0001 C CNN
+F 3 "" H 5750 1350 50  0001 C CNN
+	1    5750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C10
+U 1 1 5B3946BF
+P 8200 6700
+F 0 "C10" H 8210 6770 50  0000 L CNN
+F 1 "100n" H 8210 6620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8200 6700 50  0001 C CNN
+F 3 "" H 8200 6700 50  0001 C CNN
+	1    8200 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR031
+U 1 1 5B3948B5
+P 8200 6550
+F 0 "#PWR031" H 8200 6400 50  0001 C CNN
+F 1 "+3V3" H 8200 6690 50  0000 C CNN
+F 2 "" H 8200 6550 50  0001 C CNN
+F 3 "" H 8200 6550 50  0001 C CNN
+	1    8200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5B394959
+P 8200 6850
+F 0 "#PWR032" H 8200 6600 50  0001 C CNN
+F 1 "GND" H 8200 6700 50  0000 C CNN
+F 2 "" H 8200 6850 50  0001 C CNN
+F 3 "" H 8200 6850 50  0001 C CNN
+	1    8200 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:CP_Small-relayCard-rescue C1
+U 1 1 5B394D81
+P 4250 9900
+F 0 "C1" V 4150 9750 50  0000 L CNN
+F 1 "47uF/16V" V 4350 9700 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-C_EIA-6032-28_Hand" H 4250 9900 50  0001 C CNN
+F 3 "" H 4250 9900 50  0001 C CNN
+	1    4250 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5B394E8E
+P 4250 10100
+F 0 "#PWR016" H 4250 9850 50  0001 C CNN
+F 1 "GND" H 4250 9950 50  0000 C CNN
+F 2 "" H 4250 10100 50  0001 C CNN
+F 3 "" H 4250 10100 50  0001 C CNN
+	1    4250 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5B3952B7
+P 5300 10250
+F 0 "#PWR021" H 5300 10000 50  0001 C CNN
+F 1 "GND" H 5300 10100 50  0000 C CNN
+F 2 "" H 5300 10250 50  0001 C CNN
+F 3 "" H 5300 10250 50  0001 C CNN
+	1    5300 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:CP_Small-relayCard-rescue C8
+U 1 1 5B395E45
+P 6300 9900
+F 0 "C8" H 6310 9970 50  0000 L CNN
+F 1 "2.2uF/6.3V" H 6350 9800 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 6300 9900 50  0001 C CNN
+F 3 "" H 6300 9900 50  0001 C CNN
+	1    6300 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C6
+U 1 1 5B395FDB
+P 6100 9900
+F 0 "C6" H 6110 9970 50  0000 L CNN
+F 1 "100n" H 6110 9820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6100 9900 50  0001 C CNN
+F 3 "" H 6100 9900 50  0001 C CNN
+	1    6100 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5B396261
+P 6100 10250
+F 0 "#PWR025" H 6100 10000 50  0001 C CNN
+F 1 "GND" H 6100 10100 50  0000 C CNN
+F 2 "" H 6100 10250 50  0001 C CNN
+F 3 "" H 6100 10250 50  0001 C CNN
+	1    6100 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5B3962AE
+P 6300 10250
+F 0 "#PWR026" H 6300 10000 50  0001 C CNN
+F 1 "GND" H 6300 10100 50  0000 C CNN
+F 2 "" H 6300 10250 50  0001 C CNN
+F 3 "" H 6300 10250 50  0001 C CNN
+	1    6300 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR027
+U 1 1 5B39662E
+P 6600 9700
+F 0 "#PWR027" H 6600 9550 50  0001 C CNN
+F 1 "+3V3" H 6600 9840 50  0000 C CNN
+F 2 "" H 6600 9700 50  0001 C CNN
+F 3 "" H 6600 9700 50  0001 C CNN
+	1    6600 9700
+	0    1    1    0   
+$EndComp
+NoConn ~ 6100 9900
+$Comp
+L power:VBUS #PWR010
+U 1 1 5B396F03
+P 2250 7000
+F 0 "#PWR010" H 2250 6850 50  0001 C CNN
+F 1 "VBUS" H 2250 7150 50  0000 C CNN
+F 2 "" H 2250 7000 50  0001 C CNN
+F 3 "" H 2250 7000 50  0001 C CNN
+	1    2250 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VBUS #PWR015
+U 1 1 5B397162
+P 4100 7250
+F 0 "#PWR015" H 4100 7100 50  0001 C CNN
+F 1 "VBUS" H 4100 7400 50  0000 C CNN
+F 2 "" H 4100 7250 50  0001 C CNN
+F 3 "" H 4100 7250 50  0001 C CNN
+	1    4100 7250
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR014
+U 1 1 5B3977A6
+P 3900 9600
+F 0 "#PWR014" H 3900 9450 50  0001 C CNN
+F 1 "VCC" H 3900 9750 50  0000 C CNN
+F 2 "" H 3900 9600 50  0001 C CNN
+F 3 "" H 3900 9600 50  0001 C CNN
+	1    3900 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R1
+U 1 1 5B3980B0
+P 1500 2000
+F 0 "R1" V 1580 2000 50  0000 C CNN
+F 1 "100K" V 1500 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1430 2000 50  0001 C CNN
+F 3 "" H 1500 2000 50  0001 C CNN
+	1    1500 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C14
+U 1 1 5B3988F6
+P 1650 2000
+F 0 "C14" H 1660 2070 50  0000 L CNN
+F 1 "100n" H 1660 1920 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1650 2000 50  0001 C CNN
+F 3 "" H 1650 2000 50  0001 C CNN
+	1    1650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5B398FF2
+P 1500 1750
+F 0 "#PWR04" H 1500 1600 50  0001 C CNN
+F 1 "+3V3" H 1500 1890 50  0000 C CNN
+F 2 "" H 1500 1750 50  0001 C CNN
+F 3 "" H 1500 1750 50  0001 C CNN
+	1    1500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5B3995C2
+P 1650 1750
+F 0 "#PWR05" H 1650 1500 50  0001 C CNN
+F 1 "GND" H 1650 1600 50  0000 C CNN
+F 2 "" H 1650 1750 50  0001 C CNN
+F 3 "" H 1650 1750 50  0001 C CNN
+	1    1650 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5B39B462
+P 11450 2400
+F 0 "#PWR036" H 11450 2150 50  0001 C CNN
+F 1 "GND" H 11450 2250 50  0000 C CNN
+F 2 "" H 11450 2400 50  0001 C CNN
+F 3 "" H 11450 2400 50  0001 C CNN
+	1    11450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR040
+U 1 1 5B39B8C6
+P 11950 1250
+F 0 "#PWR040" H 11950 1100 50  0001 C CNN
+F 1 "VCC" H 11950 1400 50  0000 C CNN
+F 2 "" H 11950 1250 50  0001 C CNN
+F 3 "" H 11950 1250 50  0001 C CNN
+	1    11950 1250
+	1    0    0    -1  
+$EndComp
+Text Label 11950 1550 0    60   ~ 0
+ralay_pwr_0_7
+Text Label 11950 1650 0    60   ~ 0
+ralay_pwr_0_6
+Text Label 11950 1750 0    60   ~ 0
+ralay_pwr_0_5
+Text Label 11950 1850 0    60   ~ 0
+ralay_pwr_0_4
+Text Label 8450 4600 0    60   ~ 0
+USB_D+
+Text Label 8450 4500 0    60   ~ 0
+USB_D-
+$Comp
+L relayCard-rescue:G5Q-1-relayCard-rescue K1
+U 1 1 5B39D7BF
+P 14250 2000
+F 0 "K1" H 14900 2350 50  0000 L CNN
+F 1 "G5SB-5V" H 14900 2250 50  0000 L CNN
+F 2 "Relays_THT:Relay_SPDT_OMRON-G5Q" H 14900 2150 50  0001 L CNN
+F 3 "" H 14900 1850 50  0001 L CNN
+	1    14250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR043
+U 1 1 5B39E25F
+P 14250 1400
+F 0 "#PWR043" H 14250 1250 50  0001 C CNN
+F 1 "VCC" H 14250 1550 50  0000 C CNN
+F 2 "" H 14250 1400 50  0001 C CNN
+F 3 "" H 14250 1400 50  0001 C CNN
+	1    14250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5B39E965
+P 11450 4400
+F 0 "#PWR037" H 11450 4150 50  0001 C CNN
+F 1 "GND" H 11450 4250 50  0000 C CNN
+F 2 "" H 11450 4400 50  0001 C CNN
+F 3 "" H 11450 4400 50  0001 C CNN
+	1    11450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR041
+U 1 1 5B39E97A
+P 11950 3250
+F 0 "#PWR041" H 11950 3100 50  0001 C CNN
+F 1 "VCC" H 11950 3400 50  0000 C CNN
+F 2 "" H 11950 3250 50  0001 C CNN
+F 3 "" H 11950 3250 50  0001 C CNN
+	1    11950 3250
+	1    0    0    -1  
+$EndComp
+Text Label 11950 3750 0    60   ~ 0
+ralay_pwr_1_3
+Text Label 11950 3850 0    60   ~ 0
+ralay_pwr_1_4
+Text Label 11950 3950 0    60   ~ 0
+ralay_pwr_1_5
+Text Label 11950 4050 0    60   ~ 0
+ralay_pwr_1_6
+Text Label 11950 4150 0    60   ~ 0
+ralay_pwr_1_7
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C2
+U 1 1 5B3A9FAD
+P 4650 9900
+F 0 "C2" V 4550 9750 50  0000 L CNN
+F 1 "100n" V 4750 9750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4650 9900 50  0001 C CNN
+F 3 "" H 4650 9900 50  0001 C CNN
+	1    4650 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5B3AA3A2
+P 4650 10100
+F 0 "#PWR018" H 4650 9850 50  0001 C CNN
+F 1 "GND" H 4650 9950 50  0000 C CNN
+F 2 "" H 4650 10100 50  0001 C CNN
+F 3 "" H 4650 10100 50  0001 C CNN
+	1    4650 10100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4650 9900
+$Comp
+L relayCard-rescue:R-relayCard-rescue R4
+U 1 1 5B3AA8D2
+P 7150 8050
+F 0 "R4" V 7230 8050 50  0000 C CNN
+F 1 "10k" V 7150 8050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7080 8050 50  0001 C CNN
+F 3 "" H 7150 8050 50  0001 C CNN
+	1    7150 8050
+	-1   0    0    1   
+$EndComp
+$Comp
+L relayCard-rescue:CP_Small-relayCard-rescue C11
+U 1 1 5B3AC619
+P 12150 1350
+F 0 "C11" H 12160 1420 50  0000 L CNN
+F 1 "10uF/16V" H 12160 1270 50  0001 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 12150 1350 50  0001 C CNN
+F 3 "" H 12150 1350 50  0001 C CNN
+	1    12150 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:CP_Small-relayCard-rescue C12
+U 1 1 5B3ACC2F
+P 12150 3350
+F 0 "C12" H 12160 3420 50  0000 L CNN
+F 1 "10uF/16V" H 12160 3270 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 12150 3350 50  0001 C CNN
+F 3 "" H 12150 3350 50  0001 C CNN
+	1    12150 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 5B3AD2F8
+P 12350 1350
+F 0 "#PWR035" H 12350 1100 50  0001 C CNN
+F 1 "GND" H 12350 1200 50  0000 C CNN
+F 2 "" H 12350 1350 50  0001 C CNN
+F 3 "" H 12350 1350 50  0001 C CNN
+	1    12350 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5B3BF777
+P 1050 2850
+F 0 "#PWR02" H 1050 2600 50  0001 C CNN
+F 1 "GND" H 1050 2700 50  0000 C CNN
+F 2 "" H 1050 2850 50  0001 C CNN
+F 3 "" H 1050 2850 50  0001 C CNN
+	1    1050 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x05-relayCard-rescue J3
+U 1 1 5B3EAC4F
+P 2500 900
+F 0 "J3" H 2500 1200 50  0000 C CNN
+F 1 "Conn_01x05" H 2500 600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 2500 900 50  0001 C CNN
+F 3 "" H 2500 900 50  0001 C CNN
+	1    2500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5B3EAD74
+P 1850 700
+F 0 "#PWR06" H 1850 550 50  0001 C CNN
+F 1 "+3V3" H 1850 840 50  0000 C CNN
+F 2 "" H 1850 700 50  0001 C CNN
+F 3 "" H 1850 700 50  0001 C CNN
+	1    1850 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5B3EAEF9
+P 1850 900
+F 0 "#PWR07" H 1850 650 50  0001 C CNN
+F 1 "GND" H 1850 750 50  0000 C CNN
+F 2 "" H 1850 900 50  0001 C CNN
+F 3 "" H 1850 900 50  0001 C CNN
+	1    1850 900 
+	0    1    1    0   
+$EndComp
+Text Label 1850 800  0    60   ~ 0
+SWCLK
+Text Label 1850 1000 0    60   ~ 0
+SWDIO
+Text Label 1850 1100 0    60   ~ 0
+NRST
+Text Label 8450 4800 0    60   ~ 0
+SWCLK
+Text Label 8450 4700 0    60   ~ 0
+SWDIO
+Text Label 1750 2200 0    60   ~ 0
+NRST
+$Comp
+L power:VBUS #PWR011
+U 1 1 5B3ED632
+P 2100 9700
+F 0 "#PWR011" H 2100 9550 50  0001 C CNN
+F 1 "VBUS" H 2100 9850 50  0000 C CNN
+F 2 "" H 2100 9700 50  0001 C CNN
+F 3 "" H 2100 9700 50  0001 C CNN
+	1    2100 9700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:Polyfuse-relayCard-rescue F2
+U 1 1 5B3ED6C6
+P 2650 9700
+F 0 "F2" V 2550 9700 50  0000 C CNN
+F 1 "SD110-16" V 2750 9700 50  0000 C CNN
+F 2 "Resistors_SMD:R_1812_HandSoldering" H 2700 9500 50  0001 L CNN
+F 3 "" H 2650 9700 50  0001 C CNN
+	1    2650 9700
+	0    1    1    0   
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x09_Male-relayCard-rescue J4
+U 1 1 5B43B395
+P 9650 7550
+F 0 "J4" H 9650 8050 50  0000 C CNN
+F 1 "Conn_01x09_Male" H 9650 7050 50  0000 C CNN
+F 2 "Connectors_DSub:DSUB-9_Female_Horizontal_Pitch2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 9650 7550 50  0001 C CNN
+F 3 "" H 9650 7550 50  0001 C CNN
+	1    9650 7550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:G5Q-1-relayCard-rescue K2
+U 1 1 5B784940
+P 14250 3050
+F 0 "K2" H 14900 3400 50  0000 L CNN
+F 1 "G5SB-5V" H 14900 3300 50  0000 L CNN
+F 2 "Relays_THT:Relay_SPDT_OMRON-G5Q" H 14900 3200 50  0001 L CNN
+F 3 "" H 14900 2900 50  0001 L CNN
+	1    14250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x03-relayCard-rescue REL_1
+U 1 1 5B784946
+P 15550 1800
+F 0 "REL_1" H 15550 2000 50  0000 C CNN
+F 1 "Conn_01x03" H 15550 1600 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 15550 1800 50  0001 C CNN
+F 3 "" H 15550 1800 50  0001 C CNN
+	1    15550 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR044
+U 1 1 5B784957
+P 14250 2450
+F 0 "#PWR044" H 14250 2300 50  0001 C CNN
+F 1 "VCC" H 14250 2600 50  0000 C CNN
+F 2 "" H 14250 2450 50  0001 C CNN
+F 3 "" H 14250 2450 50  0001 C CNN
+	1    14250 2450
+	1    0    0    -1  
+$EndComp
+Text Label 13550 2150 0    60   ~ 0
+ralay_pwr_0_1
+$Comp
+L relayCard-rescue:G5Q-1-relayCard-rescue K3
+U 1 1 5B784B1B
+P 14250 4100
+F 0 "K3" H 14900 4450 50  0000 L CNN
+F 1 "G5SB-5V" H 14900 4350 50  0000 L CNN
+F 2 "Relays_THT:Relay_SPDT_OMRON-G5Q" H 14900 4250 50  0001 L CNN
+F 3 "" H 14900 3950 50  0001 L CNN
+	1    14250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x03-relayCard-rescue REL_2
+U 1 1 5B784B21
+P 15550 2850
+F 0 "REL_2" H 15550 3050 50  0000 C CNN
+F 1 "Conn_01x03" H 15550 2650 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 15550 2850 50  0001 C CNN
+F 3 "" H 15550 2850 50  0001 C CNN
+	1    15550 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR045
+U 1 1 5B784B32
+P 14250 3500
+F 0 "#PWR045" H 14250 3350 50  0001 C CNN
+F 1 "VCC" H 14250 3650 50  0000 C CNN
+F 2 "" H 14250 3500 50  0001 C CNN
+F 3 "" H 14250 3500 50  0001 C CNN
+	1    14250 3500
+	1    0    0    -1  
+$EndComp
+Text Label 13550 3200 0    60   ~ 0
+ralay_pwr_0_2
+$Comp
+L relayCard-rescue:G5Q-1-relayCard-rescue K4
+U 1 1 5B784D58
+P 14250 5150
+F 0 "K4" H 14900 5500 50  0000 L CNN
+F 1 "G5SB-5V" H 14900 5400 50  0000 L CNN
+F 2 "Relays_THT:Relay_SPDT_OMRON-G5Q" H 14900 5300 50  0001 L CNN
+F 3 "" H 14900 5000 50  0001 L CNN
+	1    14250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x03-relayCard-rescue REL_3
+U 1 1 5B784D5E
+P 15550 3900
+F 0 "REL_3" H 15550 4100 50  0000 C CNN
+F 1 "Conn_01x03" H 15550 3700 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 15550 3900 50  0001 C CNN
+F 3 "" H 15550 3900 50  0001 C CNN
+	1    15550 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR046
+U 1 1 5B784D6F
+P 14250 4550
+F 0 "#PWR046" H 14250 4400 50  0001 C CNN
+F 1 "VCC" H 14250 4700 50  0000 C CNN
+F 2 "" H 14250 4550 50  0001 C CNN
+F 3 "" H 14250 4550 50  0001 C CNN
+	1    14250 4550
+	1    0    0    -1  
+$EndComp
+Text Label 13550 4250 0    60   ~ 0
+ralay_pwr_0_3
+$Comp
+L relayCard-rescue:G5Q-1-relayCard-rescue K5
+U 1 1 5B78524D
+P 14250 6200
+F 0 "K5" H 14900 6550 50  0000 L CNN
+F 1 "G5SB-5V" H 14900 6450 50  0000 L CNN
+F 2 "Relays_THT:Relay_SPDT_OMRON-G5Q" H 14900 6350 50  0001 L CNN
+F 3 "" H 14900 6050 50  0001 L CNN
+	1    14250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x03-relayCard-rescue REL_4
+U 1 1 5B785253
+P 15550 4950
+F 0 "REL_4" H 15550 5150 50  0000 C CNN
+F 1 "Conn_01x03" H 15550 4750 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 15550 4950 50  0001 C CNN
+F 3 "" H 15550 4950 50  0001 C CNN
+	1    15550 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR047
+U 1 1 5B785264
+P 14250 5600
+F 0 "#PWR047" H 14250 5450 50  0001 C CNN
+F 1 "VCC" H 14250 5750 50  0000 C CNN
+F 2 "" H 14250 5600 50  0001 C CNN
+F 3 "" H 14250 5600 50  0001 C CNN
+	1    14250 5600
+	1    0    0    -1  
+$EndComp
+Text Label 13550 5300 0    60   ~ 0
+ralay_pwr_0_4
+$Comp
+L relayCard-rescue:G5Q-1-relayCard-rescue K6
+U 1 1 5B78526E
+P 14250 8300
+F 0 "K6" H 14900 8650 50  0000 L CNN
+F 1 "G5SB-5V" H 14900 8550 50  0000 L CNN
+F 2 "Relays_THT:Relay_SPDT_OMRON-G5Q" H 14900 8450 50  0001 L CNN
+F 3 "" H 14900 8150 50  0001 L CNN
+	1    14250 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x03-relayCard-rescue REL_5
+U 1 1 5B785274
+P 15550 6000
+F 0 "REL_5" H 15550 6200 50  0000 C CNN
+F 1 "Conn_01x03" H 15550 5800 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 15550 6000 50  0001 C CNN
+F 3 "" H 15550 6000 50  0001 C CNN
+	1    15550 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR048
+U 1 1 5B785285
+P 14250 7700
+F 0 "#PWR048" H 14250 7550 50  0001 C CNN
+F 1 "VCC" H 14250 7850 50  0000 C CNN
+F 2 "" H 14250 7700 50  0001 C CNN
+F 3 "" H 14250 7700 50  0001 C CNN
+	1    14250 7700
+	1    0    0    -1  
+$EndComp
+Text Label 13550 6350 0    60   ~ 0
+ralay_pwr_0_5
+$Comp
+L relayCard-rescue:G5Q-1-relayCard-rescue K7
+U 1 1 5B78528F
+P 14250 7250
+F 0 "K7" H 14900 7600 50  0000 L CNN
+F 1 "G5SB-5V" H 14900 7500 50  0000 L CNN
+F 2 "Relays_THT:Relay_SPDT_OMRON-G5Q" H 14900 7400 50  0001 L CNN
+F 3 "" H 14900 7100 50  0001 L CNN
+	1    14250 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x03-relayCard-rescue REL_6
+U 1 1 5B785295
+P 15550 7050
+F 0 "REL_6" H 15550 7250 50  0000 C CNN
+F 1 "Conn_01x03" H 15550 6850 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 15550 7050 50  0001 C CNN
+F 3 "" H 15550 7050 50  0001 C CNN
+	1    15550 7050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR049
+U 1 1 5B7852A6
+P 14250 6650
+F 0 "#PWR049" H 14250 6500 50  0001 C CNN
+F 1 "VCC" H 14250 6800 50  0000 C CNN
+F 2 "" H 14250 6650 50  0001 C CNN
+F 3 "" H 14250 6650 50  0001 C CNN
+	1    14250 6650
+	1    0    0    -1  
+$EndComp
+Text Label 13550 8450 0    60   ~ 0
+ralay_pwr_0_6
+$Comp
+L relayCard-rescue:Conn_01x03-relayCard-rescue REL_7
+U 1 1 5B7852B6
+P 15550 8100
+F 0 "REL_7" H 15550 8300 50  0000 C CNN
+F 1 "Conn_01x03" H 15550 7900 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 15550 8100 50  0001 C CNN
+F 3 "" H 15550 8100 50  0001 C CNN
+	1    15550 8100
+	1    0    0    1   
+$EndComp
+Text Label 13550 7400 0    60   ~ 0
+ralay_pwr_0_7
+$Comp
+L relayCard-rescue:Crystal-relayCard-rescue Y1
+U 1 1 5B78BF92
+P 950 2550
+F 0 "Y1" H 950 2700 50  0000 C CNN
+F 1 "8MHz" H 950 2350 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-4H_Vertical" H 950 2550 50  0001 C CNN
+F 3 "" H 950 2550 50  0001 C CNN
+	1    950  2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:Conn_01x02-relayCard-rescue J13
+U 1 1 5B793F0E
+P 2000 10500
+F 0 "J13" H 2000 10600 50  0000 C CNN
+F 1 "Conn_01x02" H 2000 10300 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 2000 10500 50  0001 C CNN
+F 3 "" H 2000 10500 50  0001 C CNN
+	1    2000 10500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C15
+U 1 1 5B794B76
+P 1200 2400
+F 0 "C15" H 1210 2470 50  0000 L CNN
+F 1 "22p" H 1210 2320 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1200 2400 50  0001 C CNN
+F 3 "" H 1200 2400 50  0001 C CNN
+	1    1200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:C_Small-relayCard-rescue C13
+U 1 1 5B794C3B
+P 700 2400
+F 0 "C13" H 710 2470 50  0000 L CNN
+F 1 "22p" H 710 2320 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 700 2400 50  0001 C CNN
+F 3 "" H 700 2400 50  0001 C CNN
+	1    700  2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5B79562B
+P 700 2250
+F 0 "#PWR01" H 700 2000 50  0001 C CNN
+F 1 "GND" H 700 2100 50  0000 C CNN
+F 2 "" H 700 2250 50  0001 C CNN
+F 3 "" H 700 2250 50  0001 C CNN
+	1    700  2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5B7956D8
+P 1200 2250
+F 0 "#PWR03" H 1200 2000 50  0001 C CNN
+F 1 "GND" H 1200 2100 50  0000 C CNN
+F 2 "" H 1200 2250 50  0001 C CNN
+F 3 "" H 1200 2250 50  0001 C CNN
+	1    1200 2250
+	-1   0    0    1   
+$EndComp
+Text Label 10550 3950 0    60   ~ 0
+relay_1_5
+Text Label 10550 4050 0    60   ~ 0
+relay_1_6
+Text Label 10550 4150 0    60   ~ 0
+relay_1_7
+Text Label 11950 3550 0    60   ~ 0
+ralay_pwr_1_1
+Text Label 11950 3650 0    60   ~ 0
+ralay_pwr_1_2
+Text Label 1500 3700 0    60   ~ 0
+SPI_SCK
+Text Label 1500 3800 0    60   ~ 0
+SPI_MISO
+Text Label 1500 3900 0    60   ~ 0
+SPI_MOSI
+Text Label 11250 7550 0    60   ~ 0
+SPI_SCK
+Text Label 11250 7650 0    60   ~ 0
+SPI_MISO
+Text Label 11250 7750 0    60   ~ 0
+SPI_MOSI
+Text Label 11950 2150 0    60   ~ 0
+ralay_pwr_0_1
+Text Label 11950 2050 0    60   ~ 0
+ralay_pwr_0_2
+Text Label 11950 1950 0    60   ~ 0
+ralay_pwr_0_3
+Wire Wire Line
+	8200 3800 8700 3800
+Wire Wire Line
+	8200 3900 8700 3900
+Wire Wire Line
+	8200 4000 8700 4000
+Wire Wire Line
+	10550 3550 11050 3550
+Wire Wire Line
+	10500 1550 11050 1550
+Wire Wire Line
+	10500 1650 11050 1650
+Wire Wire Line
+	10500 1750 11050 1750
+Wire Wire Line
+	10500 1850 11050 1850
+Wire Wire Line
+	8200 4500 8750 4500
+Wire Wire Line
+	8200 4600 8750 4600
+Wire Wire Line
+	8200 4700 8750 4700
+Wire Wire Line
+	8200 4800 8750 4800
+Wire Wire Line
+	2000 4700 1450 4700
+Wire Wire Line
+	1500 3800 2000 3800
+Wire Wire Line
+	1500 3900 2000 3900
+Wire Wire Line
+	1500 4200 2000 4200
+Wire Wire Line
+	1500 4300 2000 4300
+Wire Wire Line
+	1500 4400 2000 4400
+Wire Wire Line
+	1500 4500 2000 4500
+Wire Wire Line
+	1500 4800 2000 4800
+Wire Wire Line
+	1500 2200 1650 2200
+Wire Wire Line
+	1700 2400 2000 2400
+Wire Wire Line
+	1200 2600 2000 2600
+Wire Wire Line
+	700  2700 2000 2700
+Wire Wire Line
+	2200 7200 2500 7200
+Wire Wire Line
+	2500 7200 2500 7050
+Wire Wire Line
+	2500 7050 3000 7050
+Wire Wire Line
+	2200 7300 2500 7300
+Wire Wire Line
+	2500 7300 2500 7450
+Wire Wire Line
+	2500 7450 3000 7450
+Wire Wire Line
+	3000 7250 2950 7250
+Wire Wire Line
+	2200 7000 2250 7000
+Wire Wire Line
+	4000 7050 4650 7050
+Wire Wire Line
+	4000 7450 4650 7450
+Wire Wire Line
+	1800 7600 1800 7650
+Wire Wire Line
+	1800 7650 1850 7650
+Wire Wire Line
+	1900 7650 1900 7600
+Wire Wire Line
+	1850 7650 1850 7700
+Connection ~ 1850 7650
+Wire Wire Line
+	2200 10600 2300 10600
+Wire Wire Line
+	2300 10600 2300 10700
+Wire Wire Line
+	2200 10500 2500 10500
+Wire Wire Line
+	3550 9700 3700 9700
+Wire Wire Line
+	2800 10500 3250 10500
+Wire Wire Line
+	3450 10800 3450 11000
+Wire Wire Line
+	3900 10500 3650 10500
+Wire Wire Line
+	3900 9600 3900 9700
+Connection ~ 3900 9700
+Wire Wire Line
+	4350 11000 4500 11000
+Wire Wire Line
+	3900 10850 3900 11000
+Connection ~ 3900 11000
+Connection ~ 3900 10500
+Wire Wire Line
+	6800 7400 7200 7400
+Wire Wire Line
+	7200 7500 6800 7500
+Wire Wire Line
+	7700 7100 7700 7200
+Wire Wire Line
+	7700 8000 7700 8150
+Wire Wire Line
+	7150 7800 7200 7800
+Wire Wire Line
+	4900 1500 4900 1650
+Wire Wire Line
+	4900 1650 5000 1650
+Wire Wire Line
+	5200 1650 5200 1700
+Connection ~ 4900 1650
+Wire Wire Line
+	5100 1650 5100 1700
+Connection ~ 5100 1650
+Wire Wire Line
+	5000 1650 5000 1700
+Connection ~ 5000 1650
+Wire Wire Line
+	4900 5300 4900 5350
+Wire Wire Line
+	4900 5350 5000 5350
+Wire Wire Line
+	5200 5350 5200 5300
+Connection ~ 4900 5350
+Wire Wire Line
+	5100 5300 5100 5350
+Connection ~ 5100 5350
+Wire Wire Line
+	5000 5300 5000 5350
+Connection ~ 5000 5350
+Wire Wire Line
+	5750 950  5750 1000
+Wire Wire Line
+	5750 1000 5950 1000
+Wire Wire Line
+	6350 1000 6350 1050
+Connection ~ 5750 1000
+Wire Wire Line
+	6150 1050 6150 1000
+Connection ~ 6150 1000
+Wire Wire Line
+	5950 1050 5950 1000
+Connection ~ 5950 1000
+Wire Wire Line
+	6350 1300 6350 1250
+Wire Wire Line
+	5750 1300 5950 1300
+Wire Wire Line
+	5750 1250 5750 1300
+Wire Wire Line
+	5950 1250 5950 1300
+Connection ~ 5950 1300
+Wire Wire Line
+	6150 1250 6150 1300
+Connection ~ 6150 1300
+Connection ~ 5750 1300
+Wire Wire Line
+	8200 6550 8200 6600
+Wire Wire Line
+	8200 6800 8200 6850
+Wire Wire Line
+	4250 10000 4250 10100
+Wire Wire Line
+	4250 9800 4250 9700
+Connection ~ 4250 9700
+Wire Wire Line
+	5600 9700 6100 9700
+Wire Wire Line
+	6100 10250 6100 10000
+Wire Wire Line
+	6300 10000 6300 10250
+Wire Wire Line
+	6100 9800 6100 9700
+Connection ~ 6100 9700
+Wire Wire Line
+	6300 9800 6300 9700
+Connection ~ 6300 9700
+Wire Wire Line
+	4100 7250 4000 7250
+Wire Wire Line
+	1500 1750 1500 1850
+Wire Wire Line
+	1500 2200 1500 2150
+Wire Wire Line
+	1650 2100 1650 2200
+Connection ~ 1650 2200
+Wire Wire Line
+	1650 1750 1650 1900
+Wire Wire Line
+	11450 2350 11450 2400
+Wire Wire Line
+	8200 3400 8700 3400
+Wire Wire Line
+	8200 3500 8700 3500
+Wire Wire Line
+	8200 3600 8700 3600
+Wire Wire Line
+	11850 2150 12550 2150
+Wire Wire Line
+	11850 2050 12550 2050
+Wire Wire Line
+	11850 1950 12550 1950
+Wire Wire Line
+	11850 1850 12550 1850
+Wire Wire Line
+	14650 2100 14650 2150
+Wire Wire Line
+	14650 2150 15100 2150
+Wire Wire Line
+	15100 2150 15100 1800
+Wire Wire Line
+	15100 1800 15350 1800
+Wire Wire Line
+	15350 1400 15350 1700
+Wire Wire Line
+	14550 1400 15350 1400
+Wire Wire Line
+	14550 1400 14550 1500
+Wire Wire Line
+	15350 1900 15300 1900
+Wire Wire Line
+	15300 1900 15300 1450
+Wire Wire Line
+	15300 1450 14750 1450
+Wire Wire Line
+	14750 1450 14750 1500
+Wire Wire Line
+	14250 1400 14250 1450
+Wire Wire Line
+	13550 2150 13900 2150
+Wire Wire Line
+	14250 2150 14250 2100
+Wire Wire Line
+	11450 4350 11450 4400
+Wire Wire Line
+	11850 3550 12550 3550
+Wire Wire Line
+	11850 3650 12550 3650
+Wire Wire Line
+	11850 3750 12550 3750
+Wire Wire Line
+	11850 3850 12550 3850
+Wire Wire Line
+	11850 3950 12550 3950
+Wire Wire Line
+	11850 4050 12550 4050
+Wire Wire Line
+	11850 4150 12550 4150
+Wire Wire Line
+	2800 9700 2900 9700
+Wire Wire Line
+	4650 9800 4650 9700
+Connection ~ 4650 9700
+Wire Wire Line
+	4650 10000 4650 10100
+Wire Wire Line
+	7150 7800 7150 7900
+Wire Wire Line
+	7150 8200 7150 8300
+Wire Wire Line
+	1850 700  2300 700 
+Wire Wire Line
+	1850 800  2300 800 
+Wire Wire Line
+	1850 900  2300 900 
+Wire Wire Line
+	1850 1000 2300 1000
+Wire Wire Line
+	1850 1100 2300 1100
+Wire Wire Line
+	2100 9700 2500 9700
+Wire Wire Line
+	14650 3150 14650 3200
+Wire Wire Line
+	14650 3200 15100 3200
+Wire Wire Line
+	15100 3200 15100 2850
+Wire Wire Line
+	15100 2850 15350 2850
+Wire Wire Line
+	15350 2450 15350 2750
+Wire Wire Line
+	14550 2450 15350 2450
+Wire Wire Line
+	14550 2450 14550 2550
+Wire Wire Line
+	15350 2950 15300 2950
+Wire Wire Line
+	15300 2950 15300 2500
+Wire Wire Line
+	15300 2500 14750 2500
+Wire Wire Line
+	14750 2500 14750 2550
+Wire Wire Line
+	14250 2450 14250 2500
+Wire Wire Line
+	14250 3200 14250 3150
+Wire Wire Line
+	14650 4200 14650 4250
+Wire Wire Line
+	14650 4250 15100 4250
+Wire Wire Line
+	15100 4250 15100 3900
+Wire Wire Line
+	15100 3900 15350 3900
+Wire Wire Line
+	15350 3500 15350 3800
+Wire Wire Line
+	14550 3500 15350 3500
+Wire Wire Line
+	14550 3500 14550 3600
+Wire Wire Line
+	15350 4000 15300 4000
+Wire Wire Line
+	15300 4000 15300 3550
+Wire Wire Line
+	15300 3550 14750 3550
+Wire Wire Line
+	14750 3550 14750 3600
+Wire Wire Line
+	14250 3500 14250 3550
+Wire Wire Line
+	13550 3200 13900 3200
+Wire Wire Line
+	14250 4250 14250 4200
+Wire Wire Line
+	14650 5250 14650 5300
+Wire Wire Line
+	14650 5300 15100 5300
+Wire Wire Line
+	15100 5300 15100 4950
+Wire Wire Line
+	15100 4950 15350 4950
+Wire Wire Line
+	15350 4550 15350 4850
+Wire Wire Line
+	14550 4550 15350 4550
+Wire Wire Line
+	14550 4550 14550 4650
+Wire Wire Line
+	15350 5050 15300 5050
+Wire Wire Line
+	15300 5050 15300 4600
+Wire Wire Line
+	15300 4600 14750 4600
+Wire Wire Line
+	14750 4600 14750 4650
+Wire Wire Line
+	14250 4550 14250 4600
+Wire Wire Line
+	13550 4250 13900 4250
+Wire Wire Line
+	14250 5300 14250 5250
+Wire Wire Line
+	14650 6300 14650 6350
+Wire Wire Line
+	14650 6350 15100 6350
+Wire Wire Line
+	15100 6350 15100 6000
+Wire Wire Line
+	15100 6000 15350 6000
+Wire Wire Line
+	15350 5600 15350 5900
+Wire Wire Line
+	14550 5600 15350 5600
+Wire Wire Line
+	14550 5600 14550 5700
+Wire Wire Line
+	15350 6100 15300 6100
+Wire Wire Line
+	15300 6100 15300 5650
+Wire Wire Line
+	15300 5650 14750 5650
+Wire Wire Line
+	14750 5650 14750 5700
+Wire Wire Line
+	14250 5600 14250 5650
+Wire Wire Line
+	13550 5300 13900 5300
+Wire Wire Line
+	14250 6350 14250 6300
+Wire Wire Line
+	14650 8400 14650 8450
+Wire Wire Line
+	14650 8450 15200 8450
+Wire Wire Line
+	14550 7700 14550 7800
+Wire Wire Line
+	15200 8200 15350 8200
+Wire Wire Line
+	14750 7750 14750 7800
+Wire Wire Line
+	14250 7700 14250 7750
+Wire Wire Line
+	13550 6350 13900 6350
+Wire Wire Line
+	14250 8450 14250 8400
+Wire Wire Line
+	14650 7350 14650 7400
+Wire Wire Line
+	14650 7400 15200 7400
+Wire Wire Line
+	14550 6650 14550 6750
+Wire Wire Line
+	15200 7150 15350 7150
+Wire Wire Line
+	14750 6700 14750 6750
+Wire Wire Line
+	14250 6650 14250 6700
+Wire Wire Line
+	13550 8450 13900 8450
+Wire Wire Line
+	14250 7400 14250 7350
+Wire Wire Line
+	700  2500 700  2550
+Wire Wire Line
+	800  2550 700  2550
+Connection ~ 700  2550
+Wire Wire Line
+	1200 2500 1200 2550
+Wire Wire Line
+	1200 2550 1100 2550
+Connection ~ 1200 2550
+Wire Wire Line
+	700  2250 700  2300
+Wire Wire Line
+	1200 2250 1200 2300
+Wire Wire Line
+	8200 3700 8700 3700
+Wire Wire Line
+	10550 3950 11050 3950
+Wire Wire Line
+	10550 4050 11050 4050
+Wire Wire Line
+	10550 4150 11050 4150
+Wire Wire Line
+	1500 3700 2000 3700
+Wire Wire Line
+	11050 3650 10550 3650
+Wire Wire Line
+	11050 3750 10550 3750
+Wire Wire Line
+	11050 3850 10550 3850
+Wire Wire Line
+	11150 7650 12050 7650
+Wire Wire Line
+	11150 7550 12050 7550
+Wire Wire Line
+	11150 8250 12050 8250
+Wire Wire Line
+	11150 8350 12050 8350
+Wire Wire Line
+	11150 8450 12050 8450
+Wire Wire Line
+	11850 1750 12550 1750
+Wire Wire Line
+	11850 1650 12550 1650
+Wire Wire Line
+	11850 1550 12550 1550
+Wire Wire Line
+	11150 8150 12050 8150
+Wire Wire Line
+	11150 8050 12050 8050
+Wire Wire Line
+	11150 7950 12050 7950
+Wire Wire Line
+	11150 7750 12050 7750
+$Comp
+L power:VCC #PWR038
+U 1 1 5B7EA9FE
+P 11850 7450
+F 0 "#PWR038" H 11850 7300 50  0001 C CNN
+F 1 "VCC" H 11850 7600 50  0000 C CNN
+F 2 "" H 11850 7450 50  0001 C CNN
+F 3 "" H 11850 7450 50  0001 C CNN
+	1    11850 7450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11850 7450 12050 7450
+Wire Wire Line
+	12550 7450 12650 7450
+Wire Wire Line
+	12650 7450 12650 7550
+Wire Wire Line
+	12550 7550 12650 7550
+Connection ~ 12650 7550
+Connection ~ 12650 7650
+Connection ~ 12650 7750
+Connection ~ 12650 7850
+Connection ~ 12650 7950
+Connection ~ 12650 8050
+Connection ~ 12650 8150
+Connection ~ 12650 8250
+Connection ~ 12650 8350
+Connection ~ 12650 8450
+Wire Wire Line
+	12550 7650 12650 7650
+Wire Wire Line
+	12550 7750 12650 7750
+Wire Wire Line
+	12550 7850 12650 7850
+Wire Wire Line
+	12550 7950 12650 7950
+Wire Wire Line
+	12550 8050 12650 8050
+Wire Wire Line
+	12550 8150 12650 8150
+Wire Wire Line
+	12550 8250 12650 8250
+Wire Wire Line
+	12550 8350 12650 8350
+Wire Wire Line
+	12550 8450 12650 8450
+$Comp
+L power:GND #PWR042
+U 1 1 5B7EB5FC
+P 12650 8550
+F 0 "#PWR042" H 12650 8300 50  0001 C CNN
+F 1 "GND" H 12650 8400 50  0000 C CNN
+F 2 "" H 12650 8550 50  0001 C CNN
+F 3 "" H 12650 8550 50  0001 C CNN
+	1    12650 8550
+	1    0    0    -1  
+$EndComp
+Text Label 2500 7050 0    60   ~ 0
+USB_D0+
+Text Label 2500 7450 0    60   ~ 0
+USB_D0-
+Wire Wire Line
+	15200 7400 15200 7150
+Wire Wire Line
+	14750 6700 15250 6700
+Wire Wire Line
+	15250 6700 15250 7050
+Wire Wire Line
+	15250 7050 15350 7050
+Wire Wire Line
+	15350 6950 15350 6650
+Wire Wire Line
+	15350 6650 14550 6650
+Wire Wire Line
+	15200 8450 15200 8200
+Wire Wire Line
+	14750 7750 15200 7750
+Wire Wire Line
+	15200 7750 15200 8100
+Wire Wire Line
+	15200 8100 15350 8100
+Wire Wire Line
+	15350 8000 15350 7700
+Wire Wire Line
+	15350 7700 14550 7700
+$Comp
+L relayCard-rescue:Jumper-relayCard-rescue JP1
+U 1 1 5B886BDC
+P 8750 7000
+F 0 "JP1" H 8750 7150 50  0000 C CNN
+F 1 "Jumper" H 8750 6920 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8750 7000 50  0001 C CNN
+F 3 "" H 8750 7000 50  0001 C CNN
+	1    8750 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R5
+U 1 1 5B886CD1
+P 9050 7000
+F 0 "R5" V 9130 7000 50  0000 C CNN
+F 1 "120R" V 9050 7000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8980 7000 50  0001 C CNN
+F 3 "" H 9050 7000 50  0001 C CNN
+	1    9050 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 6700 8750 6550
+Wire Wire Line
+	8750 6550 9050 6550
+Wire Wire Line
+	9050 6550 9050 6850
+$Comp
+L relayCard-rescue:LED-relayCard-rescue D3
+U 1 1 5B887E9C
+P 950 4700
+F 0 "D3" H 950 4800 50  0000 C CNN
+F 1 "LED" H 950 4600 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 950 4700 50  0001 C CNN
+F 3 "" H 950 4700 50  0001 C CNN
+	1    950  4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R6
+U 1 1 5B888569
+P 1300 4700
+F 0 "R6" V 1380 4700 50  0000 C CNN
+F 1 "220R" V 1300 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1230 4700 50  0001 C CNN
+F 3 "" H 1300 4700 50  0001 C CNN
+	1    1300 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR033
+U 1 1 5B8887A5
+P 750 4700
+F 0 "#PWR033" H 750 4550 50  0001 C CNN
+F 1 "+3V3" H 750 4840 50  0000 C CNN
+F 2 "" H 750 4700 50  0001 C CNN
+F 3 "" H 750 4700 50  0001 C CNN
+	1    750  4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 4700 1100 4700
+Wire Wire Line
+	800  4700 750  4700
+Wire Wire Line
+	1850 7650 1900 7650
+Wire Wire Line
+	3900 9700 4250 9700
+Wire Wire Line
+	3900 9700 3900 10500
+Wire Wire Line
+	3450 11000 3900 11000
+Wire Wire Line
+	3900 11000 4050 11000
+Wire Wire Line
+	3900 10500 3900 10650
+Wire Wire Line
+	4900 1650 4900 1700
+Wire Wire Line
+	5100 1650 5200 1650
+Wire Wire Line
+	5000 1650 5100 1650
+Wire Wire Line
+	4900 5350 4900 5450
+Wire Wire Line
+	5100 5350 5200 5350
+Wire Wire Line
+	5000 5350 5100 5350
+Wire Wire Line
+	5750 1000 5750 1050
+Wire Wire Line
+	6150 1000 6350 1000
+Wire Wire Line
+	5950 1000 6150 1000
+Wire Wire Line
+	5950 1300 6150 1300
+Wire Wire Line
+	6150 1300 6350 1300
+Wire Wire Line
+	5750 1300 5750 1350
+Wire Wire Line
+	4250 9700 4650 9700
+Wire Wire Line
+	6100 9700 6300 9700
+Wire Wire Line
+	6300 9700 6600 9700
+Wire Wire Line
+	1650 2200 2000 2200
+Wire Wire Line
+	700  2550 700  2700
+Wire Wire Line
+	1200 2550 1200 2600
+Wire Wire Line
+	12650 7550 12650 7650
+Wire Wire Line
+	12650 7650 12650 7750
+Wire Wire Line
+	12650 7750 12650 7850
+Wire Wire Line
+	12650 7850 12650 7950
+Wire Wire Line
+	12650 7950 12650 8050
+Wire Wire Line
+	12650 8050 12650 8150
+Wire Wire Line
+	12650 8150 12650 8250
+Wire Wire Line
+	12650 8250 12650 8350
+Wire Wire Line
+	12650 8350 12650 8450
+$Comp
+L Connector:USB_B J2
+U 1 1 5BC9885C
+P 1900 7200
+F 0 "J2" H 1955 7667 50  0000 C CNN
+F 1 "USB_B" H 1955 7576 50  0000 C CNN
+F 2 "Connectors:USB_B" H 2050 7150 50  0001 C CNN
+F 3 " ~" H 2050 7150 50  0001 C CNN
+	1    1900 7200
+	1    0    0    -1  
+$EndComp
+Text Notes 2450 10850 0    60   ~ 0
+16V/1.1A\nSMD1812
+Text Notes 2450 10000 0    60   ~ 0
+16V/1.1A\nSMD1812
+$Comp
+L Device:D_Schottky D1
+U 1 1 5BD6B188
+P 3400 9700
+F 0 "D1" H 3400 9600 50  0000 C CNN
+F 1 "STPS1L30A" H 3400 9800 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 3400 9700 50  0001 C CNN
+F 3 "~" H 3400 9700 50  0001 C CNN
+	1    3400 9700
+	-1   0    0    1   
+$EndComp
+Text Notes 6400 1300 0    50   ~ 0
+4x 100n
+$Comp
+L power:+3V3 #PWR013
+U 1 1 5BD95909
+P 1700 2400
+F 0 "#PWR013" H 1700 2250 50  0001 C CNN
+F 1 "+3V3" H 1700 2540 50  0000 C CNN
+F 2 "" H 1700 2400 50  0001 C CNN
+F 3 "" H 1700 2400 50  0001 C CNN
+	1    1700 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9450 7250 9250 7250
+Wire Wire Line
+	9250 7250 9250 7700
+Wire Wire Line
+	9450 7750 9350 7750
+Wire Wire Line
+	9350 7750 9350 7500
+$Comp
+L Transistor_Array:ULN2003A U5
+U 1 1 5BCAE3E3
+P 11450 1750
+F 0 "U5" H 11450 2417 50  0000 C CNN
+F 1 "ULN2003A" H 11450 2326 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 11500 1200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 11550 1550 50  0001 C CNN
+	1    11450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_Array:ULN2003A U6
+U 1 1 5BD28A8E
+P 11450 3750
+F 0 "U6" H 11450 4417 50  0000 C CNN
+F 1 "ULN2003A" H 11450 4326 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 11500 3200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 11550 3550 50  0001 C CNN
+	1    11450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BF8C144
+P 12350 3350
+F 0 "#PWR0101" H 12350 3100 50  0001 C CNN
+F 1 "GND" H 12350 3200 50  0000 C CNN
+F 2 "" H 12350 3350 50  0001 C CNN
+F 3 "" H 12350 3350 50  0001 C CNN
+	1    12350 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11850 3350 11950 3350
+Wire Wire Line
+	12250 3350 12350 3350
+Wire Wire Line
+	11950 3250 11950 3350
+Connection ~ 11950 3350
+Wire Wire Line
+	11950 3350 12050 3350
+Wire Wire Line
+	11850 1350 11950 1350
+Wire Wire Line
+	11950 1250 11950 1350
+Connection ~ 11950 1350
+Wire Wire Line
+	11950 1350 12050 1350
+Wire Wire Line
+	12250 1350 12350 1350
+Wire Wire Line
+	11150 7850 12050 7850
+Text Label 11150 7850 0    60   ~ 0
+ralay_pwr_1_1
+Text Label 11150 7950 0    60   ~ 0
+ralay_pwr_1_2
+Text Label 11150 8050 0    60   ~ 0
+ralay_pwr_1_3
+Text Label 11150 8150 0    60   ~ 0
+ralay_pwr_1_4
+Text Label 11150 8250 0    60   ~ 0
+ralay_pwr_1_5
+Text Label 11150 8350 0    60   ~ 0
+ralay_pwr_1_6
+Text Label 11150 8450 0    60   ~ 0
+ralay_pwr_1_7
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J1
+U 1 1 5C069254
+P 12250 7950
+F 0 "J1" H 12300 8667 50  0000 C CNN
+F 1 "Conn_02x11_Odd_Even" H 12300 8576 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x11_Pitch2.54mm" H 12250 7950 50  0001 C CNN
+F 3 "~" H 12250 7950 50  0001 C CNN
+	1    12250 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 8450 12650 8550
+$Comp
+L relayCard-rescue:LED-relayCard-rescue D4
+U 1 1 5C0A475A
+P 9100 9950
+F 0 "D4" H 9100 10050 50  0000 C CNN
+F 1 "LED" H 9100 9850 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 9100 9950 50  0001 C CNN
+F 3 "" H 9100 9950 50  0001 C CNN
+	1    9100 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R7
+U 1 1 5C0A4760
+P 9100 9600
+F 0 "R7" V 9180 9600 50  0000 C CNN
+F 1 "570R" V 9100 9600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9030 9600 50  0001 C CNN
+F 3 "" H 9100 9600 50  0001 C CNN
+	1    9100 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 9800 9100 9750
+Wire Wire Line
+	9100 9450 9100 9400
+$Comp
+L power:VCC #PWR0102
+U 1 1 5C0DECE0
+P 9100 9400
+F 0 "#PWR0102" H 9100 9250 50  0001 C CNN
+F 1 "VCC" H 9100 9550 50  0000 C CNN
+F 2 "" H 9100 9400 50  0001 C CNN
+F 3 "" H 9100 9400 50  0001 C CNN
+	1    9100 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:LED-relayCard-rescue D5
+U 1 1 5C0DEDF8
+P 9400 9950
+F 0 "D5" H 9400 10050 50  0000 C CNN
+F 1 "LED" H 9400 9850 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 9400 9950 50  0001 C CNN
+F 3 "" H 9400 9950 50  0001 C CNN
+	1    9400 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R8
+U 1 1 5C0DEDFE
+P 9400 9600
+F 0 "R8" V 9480 9600 50  0000 C CNN
+F 1 "570R" V 9400 9600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9330 9600 50  0001 C CNN
+F 3 "" H 9400 9600 50  0001 C CNN
+	1    9400 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9400 9800 9400 9750
+Wire Wire Line
+	9400 9450 9400 9400
+$Comp
+L power:VCC #PWR0103
+U 1 1 5C0DEE06
+P 9400 9400
+F 0 "#PWR0103" H 9400 9250 50  0001 C CNN
+F 1 "VCC" H 9400 9550 50  0000 C CNN
+F 2 "" H 9400 9400 50  0001 C CNN
+F 3 "" H 9400 9400 50  0001 C CNN
+	1    9400 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:LED-relayCard-rescue D6
+U 1 1 5C0FC493
+P 9700 9950
+F 0 "D6" H 9700 10050 50  0000 C CNN
+F 1 "LED" H 9700 9850 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 9700 9950 50  0001 C CNN
+F 3 "" H 9700 9950 50  0001 C CNN
+	1    9700 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R9
+U 1 1 5C0FC499
+P 9700 9600
+F 0 "R9" V 9780 9600 50  0000 C CNN
+F 1 "570R" V 9700 9600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9630 9600 50  0001 C CNN
+F 3 "" H 9700 9600 50  0001 C CNN
+	1    9700 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 9800 9700 9750
+Wire Wire Line
+	9700 9450 9700 9400
+$Comp
+L power:VCC #PWR0104
+U 1 1 5C0FC4A1
+P 9700 9400
+F 0 "#PWR0104" H 9700 9250 50  0001 C CNN
+F 1 "VCC" H 9700 9550 50  0000 C CNN
+F 2 "" H 9700 9400 50  0001 C CNN
+F 3 "" H 9700 9400 50  0001 C CNN
+	1    9700 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:LED-relayCard-rescue D7
+U 1 1 5C0FC4A8
+P 10000 9950
+F 0 "D7" H 10000 10050 50  0000 C CNN
+F 1 "LED" H 10000 9850 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 10000 9950 50  0001 C CNN
+F 3 "" H 10000 9950 50  0001 C CNN
+	1    10000 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R10
+U 1 1 5C0FC4AE
+P 10000 9600
+F 0 "R10" V 10080 9600 50  0000 C CNN
+F 1 "570R" V 10000 9600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9930 9600 50  0001 C CNN
+F 3 "" H 10000 9600 50  0001 C CNN
+	1    10000 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 9800 10000 9750
+Wire Wire Line
+	10000 9450 10000 9400
+$Comp
+L power:VCC #PWR0105
+U 1 1 5C0FC4B6
+P 10000 9400
+F 0 "#PWR0105" H 10000 9250 50  0001 C CNN
+F 1 "VCC" H 10000 9550 50  0000 C CNN
+F 2 "" H 10000 9400 50  0001 C CNN
+F 3 "" H 10000 9400 50  0001 C CNN
+	1    10000 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:LED-relayCard-rescue D8
+U 1 1 5C138663
+P 10300 9950
+F 0 "D8" H 10300 10050 50  0000 C CNN
+F 1 "LED" H 10300 9850 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 10300 9950 50  0001 C CNN
+F 3 "" H 10300 9950 50  0001 C CNN
+	1    10300 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R11
+U 1 1 5C138669
+P 10300 9600
+F 0 "R11" V 10380 9600 50  0000 C CNN
+F 1 "570R" V 10300 9600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10230 9600 50  0001 C CNN
+F 3 "" H 10300 9600 50  0001 C CNN
+	1    10300 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10300 9800 10300 9750
+Wire Wire Line
+	10300 9450 10300 9400
+$Comp
+L power:VCC #PWR0106
+U 1 1 5C138671
+P 10300 9400
+F 0 "#PWR0106" H 10300 9250 50  0001 C CNN
+F 1 "VCC" H 10300 9550 50  0000 C CNN
+F 2 "" H 10300 9400 50  0001 C CNN
+F 3 "" H 10300 9400 50  0001 C CNN
+	1    10300 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:LED-relayCard-rescue D9
+U 1 1 5C138678
+P 10900 9950
+F 0 "D9" H 10900 10050 50  0000 C CNN
+F 1 "LED" H 10900 9850 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 10900 9950 50  0001 C CNN
+F 3 "" H 10900 9950 50  0001 C CNN
+	1    10900 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R12
+U 1 1 5C13867E
+P 10900 9600
+F 0 "R12" V 10980 9600 50  0000 C CNN
+F 1 "570R" V 10900 9600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10830 9600 50  0001 C CNN
+F 3 "" H 10900 9600 50  0001 C CNN
+	1    10900 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10900 9800 10900 9750
+Wire Wire Line
+	10900 9450 10900 9400
+$Comp
+L power:VCC #PWR0107
+U 1 1 5C138686
+P 10900 9400
+F 0 "#PWR0107" H 10900 9250 50  0001 C CNN
+F 1 "VCC" H 10900 9550 50  0000 C CNN
+F 2 "" H 10900 9400 50  0001 C CNN
+F 3 "" H 10900 9400 50  0001 C CNN
+	1    10900 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L relayCard-rescue:LED-relayCard-rescue D10
+U 1 1 5C13868D
+P 10600 9950
+F 0 "D10" H 10600 10050 50  0000 C CNN
+F 1 "LED" H 10600 9850 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 10600 9950 50  0001 C CNN
+F 3 "" H 10600 9950 50  0001 C CNN
+	1    10600 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R13
+U 1 1 5C138693
+P 10600 9600
+F 0 "R13" V 10680 9600 50  0000 C CNN
+F 1 "570R" V 10600 9600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10530 9600 50  0001 C CNN
+F 3 "" H 10600 9600 50  0001 C CNN
+	1    10600 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10600 9800 10600 9750
+Wire Wire Line
+	10600 9450 10600 9400
+$Comp
+L power:VCC #PWR0108
+U 1 1 5C13869B
+P 10600 9400
+F 0 "#PWR0108" H 10600 9250 50  0001 C CNN
+F 1 "VCC" H 10600 9550 50  0000 C CNN
+F 2 "" H 10600 9400 50  0001 C CNN
+F 3 "" H 10600 9400 50  0001 C CNN
+	1    10600 9400
+	1    0    0    -1  
+$EndComp
+Text Label 10900 10800 1    60   ~ 0
+ralay_pwr_0_7
+Text Label 10600 10800 1    60   ~ 0
+ralay_pwr_0_6
+Text Label 10300 10800 1    60   ~ 0
+ralay_pwr_0_5
+Text Label 10000 10800 1    60   ~ 0
+ralay_pwr_0_4
+Text Label 9100 10800 1    60   ~ 0
+ralay_pwr_0_1
+Text Label 9400 10800 1    60   ~ 0
+ralay_pwr_0_2
+Text Label 9700 10800 1    60   ~ 0
+ralay_pwr_0_3
+Wire Wire Line
+	9100 10100 9100 10800
+Wire Wire Line
+	9400 10100 9400 10800
+Wire Wire Line
+	9700 10100 9700 10800
+Wire Wire Line
+	10000 10100 10000 10800
+Wire Wire Line
+	10300 10100 10300 10800
+Wire Wire Line
+	10900 10100 10900 10800
+Wire Wire Line
+	10600 10100 10600 10800
+Wire Wire Line
+	10500 1950 11050 1950
+Wire Wire Line
+	10500 2050 11050 2050
+Wire Wire Line
+	10500 2150 11050 2150
+Text Label 8300 3400 0    60   ~ 0
+relay_0_1
+Text Label 10500 2150 0    60   ~ 0
+relay_0_1
+Text Label 10500 2050 0    60   ~ 0
+relay_0_2
+Text Label 10500 1950 0    60   ~ 0
+relay_0_3
+Text Label 10500 1850 0    60   ~ 0
+relay_0_4
+Text Label 10500 1750 0    60   ~ 0
+relay_0_5
+Text Label 10500 1650 0    60   ~ 0
+relay_0_6
+Text Label 10500 1550 0    60   ~ 0
+relay_0_7
+Text Label 8300 3500 0    60   ~ 0
+relay_0_2
+Text Label 8300 3600 0    60   ~ 0
+relay_0_3
+Text Label 8300 3700 0    60   ~ 0
+relay_0_4
+Text Label 8300 3800 0    60   ~ 0
+relay_0_5
+Text Label 8300 3900 0    60   ~ 0
+relay_0_6
+Text Label 8300 4000 0    60   ~ 0
+relay_0_7
+$Comp
+L relayCard-rescue:Q_PMOS_DGS-relayCard-rescue Q2
+U 1 1 5C0CF39C
+P 3400 9150
+F 0 "Q2" V 3400 9350 50  0000 L CNN
+F 1 "IRLML6402TRPBF" V 3650 8800 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3600 9250 50  0001 C CNN
+F 3 "" H 3400 9150 50  0001 C CNN
+	1    3400 9150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 9050 2900 9050
+Wire Wire Line
+	2900 9050 2900 9700
+Connection ~ 2900 9700
+Wire Wire Line
+	2900 9700 3250 9700
+Wire Wire Line
+	3600 9050 3700 9050
+Wire Wire Line
+	3700 9050 3700 9700
+Connection ~ 3700 9700
+Wire Wire Line
+	3700 9700 3900 9700
+$Comp
+L relayCard-rescue:R-relayCard-rescue R14
+U 1 1 5C1ACF0B
+P 3200 9400
+F 0 "R14" V 3280 9400 50  0000 C CNN
+F 1 "33k" V 3200 9400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3130 9400 50  0001 C CNN
+F 3 "" H 3200 9400 50  0001 C CNN
+	1    3200 9400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 9350 3400 9400
+Wire Wire Line
+	3400 9400 3350 9400
+$Comp
+L power:GND #PWR0109
+U 1 1 5C26FE02
+P 3000 9500
+F 0 "#PWR0109" H 3000 9250 50  0001 C CNN
+F 1 "GND" H 3000 9350 50  0000 C CNN
+F 2 "" H 3000 9500 50  0001 C CNN
+F 3 "" H 3000 9500 50  0001 C CNN
+	1    3000 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 9400 3000 9400
+Wire Wire Line
+	3000 9400 3000 9500
+Text Label 10550 3850 0    60   ~ 0
+relay_1_4
+Text Label 10550 3750 0    60   ~ 0
+relay_1_3
+Text Label 10550 3650 0    60   ~ 0
+relay_1_2
+Text Label 10550 3550 0    60   ~ 0
+relay_1_1
+Text Label 8300 4100 0    60   ~ 0
+relay_1_7
+Wire Wire Line
+	1500 4600 2000 4600
+Wire Wire Line
+	8200 4100 8700 4100
+Text Label 1500 3400 0    60   ~ 0
+relay_1_6
+Wire Wire Line
+	1500 3400 2000 3400
+Wire Wire Line
+	1500 3500 2000 3500
+Wire Wire Line
+	1500 3600 2000 3600
+Text Label 1500 3500 0    60   ~ 0
+relay_1_5
+Text Label 1500 3600 0    60   ~ 0
+relay_1_4
+Text Label 1500 4400 0    60   ~ 0
+relay_1_3
+Text Label 1500 4500 0    60   ~ 0
+relay_1_2
+Text Label 1500 4600 0    60   ~ 0
+relay_1_1
+$Comp
+L power:+3V3 #PWR0110
+U 1 1 5BEB8894
+P 1050 3450
+F 0 "#PWR0110" H 1050 3300 50  0001 C CNN
+F 1 "+3V3" H 1050 3590 50  0000 C CNN
+F 2 "" H 1050 3450 50  0001 C CNN
+F 3 "" H 1050 3450 50  0001 C CNN
+	1    1050 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L relayCard-rescue:R-relayCard-rescue R15
+U 1 1 5BF24653
+P 1650 2800
+F 0 "R15" V 1550 2800 50  0000 C CNN
+F 1 "100k" V 1650 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1580 2800 50  0001 C CNN
+F 3 "" H 1650 2800 50  0001 C CNN
+	1    1650 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 7500 8750 7500
+Wire Wire Line
+	8200 7700 9050 7700
+Wire Wire Line
+	8750 7300 8750 7500
+Connection ~ 8750 7500
+Wire Wire Line
+	8750 7500 9350 7500
+Wire Wire Line
+	9050 7150 9050 7700
+Connection ~ 9050 7700
+Wire Wire Line
+	9050 7700 9250 7700
+$Comp
+L Device:D D11
+U 1 1 5BF06146
+P 13900 1800
+F 0 "D11" H 13900 1900 50  0000 C CNN
+F 1 "D" H 13900 1675 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323" H 13900 1800 50  0001 C CNN
+F 3 "~" H 13900 1800 50  0001 C CNN
+	1    13900 1800
+	0    1    1    0   
+$EndComp
+Connection ~ 14250 1450
+Wire Wire Line
+	14250 1450 14250 1500
+$Comp
+L Device:D D12
+U 1 1 5BF958D8
+P 13900 2850
+F 0 "D12" H 13900 2950 50  0000 C CNN
+F 1 "D" H 13900 2725 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 13900 2850 50  0001 C CNN
+F 3 "~" H 13900 2850 50  0001 C CNN
+	1    13900 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 5BFDE2D3
+P 13900 3900
+F 0 "D13" H 13900 4000 50  0000 C CNN
+F 1 "D" H 13900 3775 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 13900 3900 50  0001 C CNN
+F 3 "~" H 13900 3900 50  0001 C CNN
+	1    13900 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 5C00342A
+P 13900 4950
+F 0 "D14" H 13900 5050 50  0000 C CNN
+F 1 "D" H 13900 4825 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 13900 4950 50  0001 C CNN
+F 3 "~" H 13900 4950 50  0001 C CNN
+	1    13900 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D15
+U 1 1 5C027FC5
+P 13900 6000
+F 0 "D15" H 13900 6100 50  0000 C CNN
+F 1 "D" H 13900 5875 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 13900 6000 50  0001 C CNN
+F 3 "~" H 13900 6000 50  0001 C CNN
+	1    13900 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D16
+U 1 1 5C04CCC5
+P 13900 7050
+F 0 "D16" H 13900 7150 50  0000 C CNN
+F 1 "D" H 13900 6925 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 13900 7050 50  0001 C CNN
+F 3 "~" H 13900 7050 50  0001 C CNN
+	1    13900 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D17
+U 1 1 5C071E27
+P 13900 8100
+F 0 "D17" H 13900 8200 50  0000 C CNN
+F 1 "D" H 13900 7975 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 13900 8100 50  0001 C CNN
+F 3 "~" H 13900 8100 50  0001 C CNN
+	1    13900 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 14250 2500
+Wire Wire Line
+	14250 2500 14250 2550
+Connection ~ 14250 3550
+Wire Wire Line
+	14250 3550 14250 3600
+Connection ~ 14250 4600
+Wire Wire Line
+	14250 4600 14250 4650
+Connection ~ 14250 5650
+Wire Wire Line
+	14250 5650 14250 5700
+Connection ~ 14250 7750
+Wire Wire Line
+	14250 7750 14250 7800
+Connection ~ 14250 6700
+Wire Wire Line
+	14250 6700 14250 6750
+Wire Wire Line
+	13900 2700 13900 2500
+Wire Wire Line
+	13900 2500 14250 2500
+Wire Wire Line
+	13900 3000 13900 3200
+Connection ~ 13900 3200
+Wire Wire Line
+	13900 3200 14250 3200
+Wire Wire Line
+	13900 1650 13900 1450
+Wire Wire Line
+	13900 1450 14250 1450
+Wire Wire Line
+	13900 1950 13900 2150
+Connection ~ 13900 2150
+Wire Wire Line
+	13900 2150 14250 2150
+Wire Wire Line
+	13900 3750 13900 3550
+Wire Wire Line
+	13900 3550 14250 3550
+Wire Wire Line
+	13900 4050 13900 4250
+Connection ~ 13900 4250
+Wire Wire Line
+	13900 4250 14250 4250
+Wire Wire Line
+	13900 4800 13900 4600
+Wire Wire Line
+	13900 4600 14250 4600
+Wire Wire Line
+	13900 5100 13900 5300
+Connection ~ 13900 5300
+Wire Wire Line
+	13900 5300 14250 5300
+Wire Wire Line
+	13900 6900 13900 6700
+Wire Wire Line
+	13900 6700 14250 6700
+Wire Wire Line
+	13900 7200 13900 7400
+Wire Wire Line
+	13550 7400 13900 7400
+Connection ~ 13900 7400
+Wire Wire Line
+	13900 7400 14250 7400
+Wire Wire Line
+	13900 7950 13900 7750
+Wire Wire Line
+	13900 7750 14250 7750
+Wire Wire Line
+	13900 8250 13900 8450
+Connection ~ 13900 8450
+Wire Wire Line
+	13900 8450 14250 8450
+Wire Wire Line
+	13900 5850 13900 5650
+Wire Wire Line
+	13900 5650 14250 5650
+Wire Wire Line
+	13900 6150 13900 6350
+Connection ~ 13900 6350
+Wire Wire Line
+	13900 6350 14250 6350
+$Comp
+L Regulator_Linear:AZ1117-3.3 U3
+U 1 1 5C346803
+P 5300 9700
+F 0 "U3" H 5300 9942 50  0000 C CNN
+F 1 "AZ1117-3.3" H 5300 9851 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5300 9950 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 5300 9700 50  0001 C CNN
+	1    5300 9700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 9700 5000 9700
+Wire Wire Line
+	5300 10000 5300 10250
+$Comp
+L Device:Jumper_NC_Dual JP2
+U 1 1 5C40DF2C
+P 1100 3150
+F 0 "JP2" V 1146 3252 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 1055 3252 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1100 3150 50  0001 C CNN
+F 3 "~" H 1100 3150 50  0001 C CNN
+	1    1100 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 2850 1100 2850
+Wire Wire Line
+	1100 2850 1100 2900
+Wire Wire Line
+	1050 3450 1100 3450
+Wire Wire Line
+	1100 3450 1100 3400
+Wire Wire Line
+	1200 3150 1350 3150
+Wire Wire Line
+	1350 3150 1350 2800
+Wire Wire Line
+	1350 2800 1500 2800
+Wire Wire Line
+	1800 2800 2000 2800
+$EndSCHEMATC
